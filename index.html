@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Funções em JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .mensagem {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0;
+        }
+        .botao {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botao:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Curiosidade Tech</h1>
+        <p class="mensagem">Clique no botão abaixo para descobrir uma curiosidade!</p>
+        <button class="botao">Descobrir Curiosidade</button>
+    </div>
+
+    <script>
+        // Selecionando os elementos HTML
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        // Função que altera o texto na página
+        function mostrarCuriosidade() {
+            mensagem.textContent = "💡 O primeiro bug de computador da história foi literalmente um inseto de verdade (uma mariposa) preso dentro de um relé!";
+            mensagem.style.color = "#28a745"; // Muda a cor do texto para verde
+            mensagem.style.fontWeight = "bold"; // Deixa o texto em negrito
+        }
+
+        // Adicionando o evento de clique ao botão
+        botao.addEventListener("click", mostrarCuriosidade);
+    </script>
+
+</body>
+</html>
